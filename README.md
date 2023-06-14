@@ -1,5 +1,5 @@
 1. Generate malicious ppt files, using Java's POI plugin to generate them
-Produce a PowerPoint file with only one slide through the POI plugin, containing a total of 640000 images of 800 * 800
+Produce a PowerPoint file with only one slide through the POI plugin, containing a total of 640000 images of 800 * 800，The ppt file size is 5 mb
 
 The code is as follows：
 ```
@@ -92,13 +92,13 @@ public class LibreOfficeUtil {
     }
 }
 ```
-4、Upon checking the memory usage, it was found that libreoffice was consuming a large amount of memory on the machine, which led to program crashes and DOS issues
+4、Looking at the memory usage situation, it can be found that only a 5m sized ppt file is needed to make libreoffice consume a large amount of memory on the machine. Afterwards, the program crashes, resulting in DOS issues
 
 ![RS0_6I){_MC}D)``}36A0RC](https://github.com/bzdxtdlsd/test1/assets/58172556/d5210e71-a12c-4d98-a6e8-9d9322f9949e)
 
 
 1、生成恶意的 ppt 文件，这里采用 java 的 poi 插件去生成
-通过 poi 插件，生产一个只有一张幻灯片的 ppt 文件，其中含有 800*800 共 64 万张图片 
+通过 poi 插件，生产一个只有一张幻灯片的 ppt 文件，其中含有 800*800 共 64 万张图片，ppt 文件大小为 5 mb
 
 代码如下：
 
@@ -196,7 +196,7 @@ public class LibreOfficeUtil {
 }
 ```
 
-4、查看内存占用情况，发现 libreoffice 占用机器大量内存，之后程序崩溃，产生 DOS 问题
+4、查看内存占用情况，可以发现只需要 5m 大小的 ppt 文件就可以使 libreoffice 占用机器大量内存，之后程序崩溃，产生 DOS 问题
 
 ![RS0_6I){_MC}D)``}36A0RC](https://github.com/bzdxtdlsd/test1/assets/58172556/8a911d64-e18d-4d4b-8b36-8537307b93e7)
 
