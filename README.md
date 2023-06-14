@@ -2,7 +2,7 @@
 Produce a PowerPoint file with only one slide through the POI plugin, containing a total of 640000 images of 800 * 800
 
 The code is as follows：
-···
+```
 public class PowerPointUtil {
     private static final int NUM =800;
     public static void main(String[] args) {
@@ -28,12 +28,12 @@ public class PowerPointUtil {
         ppt.write(new FileOutputStream(path));
     }
 }
-···
+```
 
-2\Operate libreoffice through the org. jdconverter dependency package, and initialize the configuration as follows
+2、Operate libreoffice through the org. jdconverter dependency package, and initialize the configuration as follows
 
 The code is as follows：
-
+```
 public class OfficeManagerInstance {
     private static OfficeManager INSTANCE = null;
     public static synchronized void start() {
@@ -69,11 +69,11 @@ public class OfficeManagerInstance {
         }
     }
 }
-
+```
 3、Finally, call the OfficeManager to execute the operation of converting ppt to pdf
 
 The code is as follows：
-
+```
 public class LibreOfficeUtil {
     public static void main(String[] args) {
         String pptPath="E:\\office\\test.pptx";
@@ -91,7 +91,7 @@ public class LibreOfficeUtil {
         }
     }
 }
-
+```
 4、Upon checking the memory usage, it was found that libreoffice was consuming a large amount of memory on the machine, which led to program crashes and DOS issues
 
 ![RS0_6I){_MC}D)``}36A0RC](https://github.com/bzdxtdlsd/test1/assets/58172556/d5210e71-a12c-4d98-a6e8-9d9322f9949e)
@@ -102,6 +102,7 @@ public class LibreOfficeUtil {
 
 代码如下：
 
+```
 public class PowerPointUtil {
     private static final int NUM =800;
     public static void main(String[] args) {
@@ -127,10 +128,13 @@ public class PowerPointUtil {
         ppt.write(new FileOutputStream(path));
     }
 }
+```
 
 2、通过 org.jodconverter 依赖包操作 libreoffice，初始化配置如下
+
 代码片段：
 
+```
 public class OfficeManagerInstance {
     private static OfficeManager INSTANCE = null;
     public static synchronized void start() {
@@ -166,10 +170,13 @@ public class OfficeManagerInstance {
         }
     }
 }
+```
 
 3、最后调用 OfficeManager 去执行 ppt 转 pdf 的操作
+
 代码如下：
 
+```
 public class LibreOfficeUtil {
     public static void main(String[] args) {
         String pptPath="E:\\office\\test.pptx";
@@ -187,6 +194,7 @@ public class LibreOfficeUtil {
         }
     }
 }
+```
 
 4、查看内存占用情况，发现 libreoffice 占用机器大量内存，之后程序崩溃，产生 DOS 问题
 
