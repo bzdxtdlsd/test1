@@ -2,7 +2,7 @@
 Produce a PowerPoint file with only one slide through the POI plugin, containing a total of 640000 images of 800 * 800
 
 The code is as follows：
-
+···
 public class PowerPointUtil {
     private static final int NUM =800;
     public static void main(String[] args) {
@@ -28,6 +28,7 @@ public class PowerPointUtil {
         ppt.write(new FileOutputStream(path));
     }
 }
+···
 
 2\Operate libreoffice through the org. jdconverter dependency package, and initialize the configuration as follows
 
